@@ -11,6 +11,6 @@ jobs:
     name: Validate SVD
     steps:
       - name: Check for warnings and errors
-        uses: mkroman/svdconv-check@2923da49449c4c49ae1204eeaea9353929a769d2
+        uses: mkroman/svdconv-check@a71a369a7f6d3213fd0f480a3ee0de4363e6c6dc
         with:
           path: soc602_reg.svd
