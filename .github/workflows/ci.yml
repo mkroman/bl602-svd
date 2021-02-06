@@ -5,15 +5,12 @@ on:
   pull_request:
   workflow_dispatch:
 
-env:
-  CARGO_TERM_COLOR: always
-
 jobs:
   svdconv:
     runs-on: ubuntu-latest
     name: Validate SVD
     steps:
       - name: Check for warnings and errors
-        uses: mkroman/svdconv-check@05d449f
+        uses: mkroman/svdconv-check@2923da49449c4c49ae1204eeaea9353929a769d2
         with:
           path: soc602_reg.svd
