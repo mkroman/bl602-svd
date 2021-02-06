@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Validate SVD
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Check for warnings and errors
         uses: mkroman/svdconv-check@5a714b4e61b658d7a9030283959e4453adab02bf
         with:
