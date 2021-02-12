@@ -17,3 +17,4 @@ jobs:
         uses: mkroman/svdconv-check@59d3dfe7bb615d2b008405174d2aeab318fb4a8c
         with:
           path: soc602_reg.svd
+          token: ${{ secrets.GITHUB_TOKEN }}
