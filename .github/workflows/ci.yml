@@ -14,6 +14,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Check for warnings and errors
-        uses: mkroman/svdconv-check@5a714b4e61b658d7a9030283959e4453adab02bf
+        uses: mkroman/svdconv-check@d2794a97f24cbbe9ad1c1c17cda1f45ccaa10af8
         with:
           path: soc602_reg.svd
